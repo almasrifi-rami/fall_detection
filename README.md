@@ -27,6 +27,7 @@ An accuracy of approx. 95% can be achieved by using MINIROCKET to transform the 
 
 ### Data
 
+```
 @data{bnya-mn34-20,
 doi = {10.21227/bnya-mn34},
 url = {https://dx.doi.org/10.21227/bnya-mn34},
@@ -34,10 +35,13 @@ author = {SALEH, Majd and LE BOUQUIN JEANNES, Régine},
 publisher = {IEEE Dataport},
 title = {FallAllD: A Comprehensive Dataset of Human Falls and Activities of Daily Living},
 year = {2020} }
+```
 
 ### Models
 
 1. FCN + ResNet + InceptionTime
+
+```
 @article{IsmailFawaz2018deep,
   Title                    = {Deep learning for time series classification: a review},
   Author                   = {Ismail Fawaz, Hassan and Forestier, Germain and Weber, Jonathan and Idoumghar, Lhassane and Muller, Pierre-Alain},
@@ -47,14 +51,22 @@ year = {2020} }
   number                   = {4},
   pages                    = {917--963},
 }
+```
+
 2. LSTM-FCN
+
+```
 @misc{Karim2018,
   Author = {Fazle Karim and Somshubra Majumdar and Houshang Darabi and Samuel Harford},
   Title = {Multivariate LSTM-FCNs for Time Series Classification},
   Year = {2018},
   Eprint = {arXiv:1801.04503},
 }
+```
+
 3. ROCKET
+
+```
 @article{dempster_etal_2020,
   author  = {Dempster, Angus and Petitjean, Fran\c{c}ois and Webb, Geoffrey I},
   title   = {{ROCKET}: Exceptionally Fast and Accurate Time Series Classification Using Random Convolutional Kernels},
@@ -64,7 +76,11 @@ year = {2020} }
   number  = {5},
   pages   = {1454--1495}
 }
+```
+
 4. MINIROCKET
+
+```
 @inproceedings{dempster_etal_2021,
   author    = {Dempster, Angus and Schmidt, Daniel F and Webb, Geoffrey I},
   title     = {{MiniRocket}: A Very Fast (Almost) Deterministic Transform for Time Series Classification},
@@ -74,3 +90,4 @@ year = {2020} }
   year      = {2021},
   pages     = {248--257}
 }
+```
