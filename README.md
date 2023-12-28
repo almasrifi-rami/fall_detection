@@ -21,7 +21,25 @@ After processing the data files using [FallAllD_to_PYTHON_Structure.py](https://
 
 ## Results
 
-An accuracy of approx. 95% can be achieved by using MINIROCKET to transform the data then fitting a linear classifier such as ridge regression classifier. And while the results show MINIROCKET achieves higher accuracy than the other models, there is no significant difference in the accuracy of MINIROCKET in comparison to the other models.
+An average accuracy of approx. 95% across all samples can be achieved by using MINIROCKET to transform the data then fitting a linear classifier such as ridge regression classifier. While the results show MINIROCKET achieves higher accuracy than the other models, based on the holm-wilcoxon method for post-hoc comparison with there is no significant difference in the median of the accuracies of MINIROCKET in comparison to the other models. In conclusion, all SOTA TSC models can detect falls with great accuracy with no significant differences in the performance.
+
+|Model\_1|Model\_2|p\_value|H0 \(Holm\)|
+|---|---|---|---|
+|ResNet|MINIROCKET|0\.00443|Accept|
+|LSTM-FCN|MINIROCKET|0\.00443|Accept|
+|FCN|MINIROCKET|0\.00963|Accept|
+|ResNet|InceptionTime|0\.01636|Accept|
+|FCN|InceptionTime|0\.04685|Accept|
+|ROCKET|MINIROCKET|0\.06811|Accept|
+|InceptionTime|MINIROCKET|0\.08437|Accept|
+|ResNet|ROCKET|0\.09423|Accept|
+|InceptionTime|LSTM-FCN|0\.11666|Accept|
+|FCN|ROCKET|0\.13609|Accept|
+|LSTM-FCN|ROCKET|0\.16772|Accept|
+|FCN|ResNet|0\.72210|Accept|
+|FCN|LSTM-FCN|0\.81394|Accept|
+|ResNet|LSTM-FCN|0\.81394|Accept|
+|InceptionTime|ROCKET|0\.93747|Accept|
 
 ## References
 
