@@ -23,7 +23,7 @@ After processing the data files using [FallAllD_to_PYTHON_Structure.py](https://
 
 An average accuracy of approx. 95% across all samples can be achieved by using MINIROCKET to transform the data then fitting a linear classifier such as ridge regression classifier. The descriptive statistics of the models accuracies across samples suggest that some models perform better than others on the fall detection problem. Friedman's test results in p-value = 0.007 < 0.05 which also contributes to the conclusion that the models performances are different from one another.
 
-!(Accuracy Boxplot)[accuracies_boxplot.png "Boxplot"]
+!(Accuracy Boxplot)[~/accuracies_boxplot.png "Boxplot"]
 
 However, after comparing the results with Wilcoxon's signed rank test with Holm's method, we accept the null hypothesis. This means that there is no statistically significant difference in the median of accuracy between the models or that the test does not have enough power to detect the difference.
 
