@@ -27,6 +27,8 @@ An accuracy of approx. 95% can be achieved by using MINIROCKET to transform the 
 
 ### Data
 
+The data used in this work was downloaded from downloaded from [IEEDataPort](https://ieee-dataport.org/open-access/fallalld-comprehensive-dataset-human-falls-and-activities-daily-living).
+
 ```
 @data{bnya-mn34-20,
 doi = {10.21227/bnya-mn34},
@@ -39,55 +41,96 @@ year = {2020} }
 
 ### Models
 
-1. FCN + ResNet + InceptionTime
+The models used in this work are adapted from the code of the following papers.
+
+1. FCN + ResNet
 
 ```
-@article{IsmailFawaz2018deep,
-  Title                    = {Deep learning for time series classification: a review},
-  Author                   = {Ismail Fawaz, Hassan and Forestier, Germain and Weber, Jonathan and Idoumghar, Lhassane and Muller, Pierre-Alain},
-  journal                  = {Data Mining and Knowledge Discovery},
-  Year                     = {2019},
-  volume                   = {33},
-  number                   = {4},
-  pages                    = {917--963},
+@misc{wang2016time,
+      title={Time Series Classification from Scratch with Deep Neural Networks: A Strong Baseline}, 
+      author={Zhiguang Wang and Weizhong Yan and Tim Oates},
+      year={2016},
+      eprint={1611.06455},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
 }
 ```
 
-2. LSTM-FCN
-
 ```
-@misc{Karim2018,
-  Author = {Fazle Karim and Somshubra Majumdar and Houshang Darabi and Samuel Harford},
-  Title = {Multivariate LSTM-FCNs for Time Series Classification},
-  Year = {2018},
-  Eprint = {arXiv:1801.04503},
-}
-```
-
-3. ROCKET
-
-```
-@article{dempster_etal_2020,
-  author  = {Dempster, Angus and Petitjean, Fran\c{c}ois and Webb, Geoffrey I},
-  title   = {{ROCKET}: Exceptionally Fast and Accurate Time Series Classification Using Random Convolutional Kernels},
-  journal = {Data Mining and Knowledge Discovery},
-  year    = {2020},
-  volume  = {34},
-  number  = {5},
-  pages   = {1454--1495}
-}
+@article{Ismail_Fawaz_2019,
+   title={Deep learning for time series classification: a review},
+   volume={33},
+   ISSN={1573-756X},
+   url={http://dx.doi.org/10.1007/s10618-019-00619-1},
+   DOI={10.1007/s10618-019-00619-1},
+   number={4},
+   journal={Data Mining and Knowledge Discovery},
+   publisher={Springer Science and Business Media LLC},
+   author={Ismail Fawaz, Hassan and Forestier, Germain and Weber, Jonathan and Idoumghar, Lhassane and Muller, Pierre-Alain},
+   year={2019},
+   month=mar, pages={917–963} }
 ```
 
-4. MINIROCKET
+2. InceptionTime
 
 ```
-@inproceedings{dempster_etal_2021,
-  author    = {Dempster, Angus and Schmidt, Daniel F and Webb, Geoffrey I},
-  title     = {{MiniRocket}: A Very Fast (Almost) Deterministic Transform for Time Series Classification},
-  booktitle = {Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
-  publisher = {ACM},
-  address   = {New York},
-  year      = {2021},
-  pages     = {248--257}
-}
+@article{Ismail_Fawaz_2020,
+   title={InceptionTime: Finding AlexNet for time series classification},
+   volume={34},
+   ISSN={1573-756X},
+   url={http://dx.doi.org/10.1007/s10618-020-00710-y},
+   DOI={10.1007/s10618-020-00710-y},
+   number={6},
+   journal={Data Mining and Knowledge Discovery},
+   publisher={Springer Science and Business Media LLC},
+   author={Ismail Fawaz, Hassan and Lucas, Benjamin and Forestier, Germain and Pelletier, Charlotte and Schmidt, Daniel F. and Weber, Jonathan and Webb, Geoffrey I. and Idoumghar, Lhassane and Muller, Pierre-Alain and Petitjean, François},
+   year={2020},
+   month=sep, pages={1936–1962} }
+```
+
+3. LSTM-FCN
+
+```
+@article{Karim_2019,
+   title={Multivariate LSTM-FCNs for time series classification},
+   volume={116},
+   ISSN={0893-6080},
+   url={http://dx.doi.org/10.1016/j.neunet.2019.04.014},
+   DOI={10.1016/j.neunet.2019.04.014},
+   journal={Neural Networks},
+   publisher={Elsevier BV},
+   author={Karim, Fazle and Majumdar, Somshubra and Darabi, Houshang and Harford, Samuel},
+   year={2019},
+   month=aug, pages={237–245} }
+```
+
+4. ROCKET
+
+```
+@article{Dempster_2020,
+   title={ROCKET: exceptionally fast and accurate time series classification using random convolutional kernels},
+   volume={34},
+   ISSN={1573-756X},
+   url={http://dx.doi.org/10.1007/s10618-020-00701-z},
+   DOI={10.1007/s10618-020-00701-z},
+   number={5},
+   journal={Data Mining and Knowledge Discovery},
+   publisher={Springer Science and Business Media LLC},
+   author={Dempster, Angus and Petitjean, François and Webb, Geoffrey I.},
+   year={2020},
+   month=jul, pages={1454–1495} }
+```
+
+5. MINIROCKET
+
+```
+@inproceedings{Dempster_2021, series={KDD ’21},
+   title={MiniRocket: A Very Fast (Almost) Deterministic Transform for Time Series Classification},
+   url={http://dx.doi.org/10.1145/3447548.3467231},
+   DOI={10.1145/3447548.3467231},
+   booktitle={Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery &amp; Data Mining},
+   publisher={ACM},
+   author={Dempster, Angus and Schmidt, Daniel F. and Webb, Geoffrey I.},
+   year={2021},
+   month=aug, collection={KDD ’21} }
 ```
