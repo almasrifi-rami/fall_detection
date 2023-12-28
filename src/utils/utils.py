@@ -302,6 +302,7 @@ def analyze_metrics(files, scoring):
         metric_by_subject = compare_results(Y_TRUE, Y_PRED, scoring=scoring)
         report[k] = report.get(k, metric_by_subject)
     report_df = pd.DataFrame(report) * 100
+    report_df.index.name = 'Subject_ID'
 
     return report_df
 
