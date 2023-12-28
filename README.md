@@ -50,7 +50,7 @@ However, after comparing the results with Wilcoxon's signed rank test with Holm'
 
 ### Data
 
-The data used in this work was downloaded from downloaded from [IEEDataPort](https://ieee-dataport.org/open-access/fallalld-comprehensive-dataset-human-falls-and-activities-daily-living).
+The data used in this work was downloaded from [IEEDataPort](https://ieee-dataport.org/open-access/fallalld-comprehensive-dataset-human-falls-and-activities-daily-living).
 
 ```
 @data{bnya-mn34-20,
