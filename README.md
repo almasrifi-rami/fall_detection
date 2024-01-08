@@ -27,24 +27,7 @@ An average accuracy of approx. 95% across all samples can be achieved by using M
 
 However, after comparing the results with Wilcoxon's signed rank test with Holm's method, we accept the null hypothesis. This means that there is no statistically significant difference in the median of accuracy between the models or that the test does not have enough power to detect the difference.
 
-
-|Model\_1|Model\_2|p\_value|H0 \(Holm-Wilcoxon\)|
-|---|---|---|---|
-|ResNet|MINIROCKET|0\.00443|Accept|
-|LSTM-FCN|MINIROCKET|0\.00443|Accept|
-|FCN|MINIROCKET|0\.00963|Accept|
-|ResNet|InceptionTime|0\.01636|Accept|
-|FCN|InceptionTime|0\.04685|Accept|
-|ROCKET|MINIROCKET|0\.06811|Accept|
-|InceptionTime|MINIROCKET|0\.08437|Accept|
-|ResNet|ROCKET|0\.09423|Accept|
-|InceptionTime|LSTM-FCN|0\.11666|Accept|
-|FCN|ROCKET|0\.13609|Accept|
-|LSTM-FCN|ROCKET|0\.16772|Accept|
-|FCN|ResNet|0\.72210|Accept|
-|FCN|LSTM-FCN|0\.81394|Accept|
-|ResNet|LSTM-FCN|0\.81394|Accept|
-|InceptionTime|ROCKET|0\.93747|Accept|
+![cd-diagram](cd-diagram.png "Critical Difference Diagram")
 
 ## References
 
